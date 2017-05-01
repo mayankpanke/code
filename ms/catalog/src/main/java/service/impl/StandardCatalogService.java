@@ -5,9 +5,11 @@ import data.Item;
 import exception.CatalogException;
 import exception.CatalogNotFoundException;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Service;
 import service.CatalogService;
 
-
+@Service
 public class StandardCatalogService implements CatalogService {
 
     @Override
@@ -33,7 +35,7 @@ public class StandardCatalogService implements CatalogService {
         return new Catalog(catalogName);
     }
 
-    @Bean
+    @Bean @Primary
     public CatalogService newCatalogService() {
         return new StandardCatalogService();
     }
