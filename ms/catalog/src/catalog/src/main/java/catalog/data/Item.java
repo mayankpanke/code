@@ -1,4 +1,4 @@
-package data;
+package catalog.data;
 
 
 public class Item {

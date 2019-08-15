@@ -1,13 +1,12 @@
-package test.service;
+package catalog.service;
 
-import data.Catalog;
-import data.Item;
-import exception.CatalogException;
+import catalog.data.Catalog;
+import catalog.data.Item;
+import catalog.exception.CatalogException;
+import catalog.service.impl.StandardCatalogService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import service.CatalogService;
-import service.impl.StandardCatalogService;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;

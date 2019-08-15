@@ -1,13 +1,13 @@
-package service.impl;
+package catalog.service.impl;
 
-import data.Catalog;
-import data.Item;
-import exception.CatalogException;
-import exception.CatalogNotFoundException;
+import catalog.data.Catalog;
+import catalog.data.Item;
+import catalog.exception.CatalogException;
+import catalog.exception.CatalogNotFoundException;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
-import service.CatalogService;
+import catalog.service.CatalogService;
 
 @Service
 public class StandardCatalogService implements CatalogService {

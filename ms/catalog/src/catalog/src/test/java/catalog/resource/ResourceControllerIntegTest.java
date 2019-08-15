@@ -1,5 +1,6 @@
-package test.rest.resource;
+package catalog.resource;
 
+import catalog.Application;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,8 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import rest.Application;
-import rest.resource.CatalogResource;
 
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -33,14 +32,14 @@ public class ResourceControllerIntegTest {
 
     @Test
     public void createCatalog() throws Exception {
-        mockMvc.perform(post("/catalog").param("catalogName", "Catalog1"))
+        mockMvc.perform(post("/catalogs").param("catalogName", "Catalog1"))
                 .andExpect(status().isCreated());
     }
 
     @Test
     public void createAndValidateCatalogResponse() throws Exception {
         String expectedBody = "{\"allItems\":[],\"name\":\"Catalog1\"}";
-        mockMvc.perform(post("/catalog").param("catalogName", "Catalog1"))
+        mockMvc.perform(post("/catalogs").param("catalogName", "Catalog1"))
                 .andExpect(status().isCreated())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(content().json(expectedBody));
@@ -48,7 +47,7 @@ public class ResourceControllerIntegTest {
 
     @Test
     public void createCatalogFail() throws Exception {
-        mockMvc.perform(post("/catalog").param("catalogName", ""))
+        mockMvc.perform(post("/catalogs").param("catalogName", ""))
                 .andExpect(status().isInternalServerError());
     }
 

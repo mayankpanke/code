@@ -1,4 +1,4 @@
-package data;
+package catalog.data;
 
 import java.util.Collection;
 import java.util.HashSet;

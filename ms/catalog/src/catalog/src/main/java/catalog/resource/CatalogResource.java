@@ -1,13 +1,13 @@
-package rest.resource;
+package catalog.resource;
 
 
-import data.Catalog;
-import exception.CatalogException;
+import catalog.data.Catalog;
+import catalog.exception.CatalogException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import service.CatalogService;
+import catalog.service.CatalogService;
 
 @RestController
 @RequestMapping("/catalogs")

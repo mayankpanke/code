@@ -1,4 +1,4 @@
-package exception;
+package catalog.exception;
 
 /**
  * Created by vagrant on 5/1/17.
