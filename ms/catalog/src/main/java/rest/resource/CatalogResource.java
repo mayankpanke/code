@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import service.CatalogService;
 
 @RestController
-@RequestMapping("/catalog")
+@RequestMapping("/catalogs")
 
 public class CatalogResource {
     @Autowired
