@@ -1,4 +1,4 @@
-package catalog.data;
+package catalog.model;
 
 
 public class Item {

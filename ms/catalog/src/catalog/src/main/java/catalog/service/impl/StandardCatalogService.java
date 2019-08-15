@@ -1,7 +1,7 @@
 package catalog.service.impl;
 
-import catalog.data.Catalog;
-import catalog.data.Item;
+import catalog.model.Catalog;
+import catalog.model.Item;
 import catalog.exception.CatalogException;
 import catalog.exception.CatalogNotFoundException;
 import org.springframework.context.annotation.Bean;

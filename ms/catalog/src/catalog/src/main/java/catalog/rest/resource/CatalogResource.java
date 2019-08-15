@@ -1,7 +1,7 @@
-package catalog.resource;
+package catalog.rest.resource;
 
 
-import catalog.data.Catalog;
+import catalog.model.Catalog;
 import catalog.exception.CatalogException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

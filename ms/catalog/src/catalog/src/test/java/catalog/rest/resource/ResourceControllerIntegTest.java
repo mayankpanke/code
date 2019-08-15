@@ -1,4 +1,4 @@
-package catalog.resource;
+package catalog.rest.resource;
 
 import catalog.Application;
 import org.junit.Before;

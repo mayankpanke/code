@@ -1,7 +1,7 @@
 package catalog.service;
 
-import catalog.data.Catalog;
-import catalog.data.Item;
+import catalog.model.Catalog;
+import catalog.model.Item;
 import catalog.exception.CatalogException;
 
 public interface CatalogService {
